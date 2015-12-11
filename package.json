@@ -10,6 +10,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "express": "~4.13.3",
-    "acorn": "~2.6.4"
+    "acorn": "~2.6.4",
+    "bower": "~1.7.1"
   }
 }
