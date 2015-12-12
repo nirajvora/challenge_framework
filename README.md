@@ -1,6 +1,5 @@
 # challenge_framework
 
-run npm install
-cd into client
-  run bower install
+1) run npm install
+2) run bower install
 
