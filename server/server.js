@@ -5,8 +5,6 @@ var app = express();
 
 ///////////////////////////////////////////////////// CONFIGURATION ROUTES
 
-app.use(express.static(__dirname + '/../client/angular.min.js'));
-
 app.use(express.static(__dirname + '/../client'));
 
 app.use(bodyParser.json());
