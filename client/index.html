@@ -3,17 +3,20 @@
   
   <head>
     <title>Challenge Framework</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
   
   <body ng-app='app'>
 
- <text-directive></text-directive>
-
+  <div ng-controller='PageController'>
+    <text-directive></text-directive>
+    <ul> <li ng-repeat="value in structure track by $index">{{ value }}</li> </ul>
+  </div>
     <script src='acorn.js'></script>
     <script src='app.js'></script>
-    <script src='controller.js'></script>
     <script src='factory.js'></script>
+    <script src='controller.js'></script>
     <script src='directive.js'></script>
   </body>
 </html>
