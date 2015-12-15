@@ -10,6 +10,7 @@ app.controller('PageController', ['$scope', 'CodeFactory', function ( $scope, Co
 
       //If this point in the call stack has been reached, it means acorn has not thrown an error and the display variable can updated if needed
       $scope.error = 'No Errors';
+      $scope.errorColor = {color: 'green'};
 
       //update the requirement colors: green means that requirement is currently passing; red means it is not.
       if(CodeFactory.isInside( data, 'ForStatement', 'IfStatement')) {
@@ -34,12 +35,14 @@ app.controller('PageController', ['$scope', 'CodeFactory', function ( $scope, Co
   window.onerror = function ( ) {
     $scope.$apply(function ( ) {
       $scope.error = 'ERROR: look at your console!';
+      $scope.errorColor = {color: 'red'};
     });
   };
 
 
   //initializing display variables
   $scope.error = 'No Errors';
+  $scope.errorColor = {color: 'green'};
   $scope.structure = "";
 
   $scope.whiteStyle = {color: 'red'};
