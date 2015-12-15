@@ -1,3 +1,29 @@
-li {
-  
+#task {
+  padding-bottom: 10px;
 }
+
+#whitelist {
+  padding-bottom: 10px;
+
+}
+
+#blacklist {
+  padding-bottom: 10px;
+
+}
+
+#errors {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.feedback {
+  float: left;
+  padding-left: 3em;
+
+}
+
+text-directive {
+  float: left;
+}
+  

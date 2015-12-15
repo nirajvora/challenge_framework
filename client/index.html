@@ -10,9 +10,23 @@
   <body ng-app='app'>
 
   <div ng-controller='PageController'>
+
     <text-directive></text-directive>
-    <ul> <li ng-repeat="value in structure track by $index">{{ value }}</li> </ul>
+
+    <div class='feedback'>
+
+      <div id='task'>Task: {{ task }}</div>
+      <div ng-style='whiteStyle' id='whitelist'> {{ whiteList }} </div>
+      <div ng-style='blackStyle' id='blacklist'> {{ blackList }} </div>
+
+      <div id='errors'> {{ error }} </div>
+      <div id='structure' ng-repeat="value in structure track by $index"> {{ value }} </div>
+    </div>
+
   </div>
+
+
+
     <script src='acorn.js'></script>
     <script src='app.js'></script>
     <script src='factory.js'></script>
