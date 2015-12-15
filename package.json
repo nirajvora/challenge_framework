@@ -10,8 +10,6 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "express": "~4.13.3",
-    "bower": "~1.7.1",
-    "acorn": "~2.6.4",
     "body-parser": "~1.14.1"
   }
 }
